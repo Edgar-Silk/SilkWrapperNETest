@@ -17,7 +17,7 @@ namespace SilkWrapperNETest {
 
       //Native.FPDF_InitLibrary();
 
-      string File = "C:/Users/edgar/source/repos/SilkWrapperNETest/test.pdf";
+      string File = "C:/projects/silkwrappernetest/test.pdf";
 
       Console.WriteLine("\nOpen PDF file in: " + File);
 

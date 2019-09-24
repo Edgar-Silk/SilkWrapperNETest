@@ -3,15 +3,20 @@ image: Visual Studio 2017
 platform: x64
 configuration: Debug
 
-before_build:
-  - dotnet restore
+before_build: 
+    - ps: Set-Location "C:/projects/silkwrappernet/PS"
+    - ps: ./Build_PDFium.ps1 -Arch "$env:PLATFORM"
 
-#  - nuget install packages.config
+    - ps: Set-Location "C:/projects/silkwrappernet/PS"
+    - ps: ./Build_Wrapper.ps1 -Arch "$env:PLATFORM"
+
+    - dotnet restore
+
 
 build:
   include_nuget_references: true
   verbosity: normal
-  project: TestFromNuget.sln 
+  project: SilkWrapperNETest.sln 
 
 test_script:
-  - C:\projects\testfromnuget\TestFromNuGet\bin\x64\Debug\TestFromNuGet.exe
+  - C:\projects\silkwrappernetest\SilkWrapperNETest\bin\x64\Debug\SilkWrapperNETest.exe
