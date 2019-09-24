@@ -1,0 +1,17 @@
+version: 1.0.{build}
+image: Visual Studio 2017
+platform: x64
+configuration: Debug
+
+before_build:
+  - dotnet restore
+
+#  - nuget install packages.config
+
+build:
+  include_nuget_references: true
+  verbosity: normal
+  project: TestFromNuget.sln 
+
+test_script:
+  - C:\projects\testfromnuget\TestFromNuGet\bin\x64\Debug\TestFromNuGet.exe
