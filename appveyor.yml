@@ -11,9 +11,9 @@ before_build:
     #- ps: ./Build_Wrapper.ps1 -Arch "$env:PLATFORM"
 
     # This is the location for building the VS project
-    - ps: Set-Location C:/projects/silkwrappernetest
+    #- ps: Set-Location C:/projects/silkwrappernetest
 
-    #- dotnet restore
+    - dotnet restore
 
 build:
   include_nuget_references: true
