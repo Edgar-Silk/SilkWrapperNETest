@@ -39,7 +39,7 @@ namespace SilkWrapperNETest {
       Console.WriteLine("\nDestroying library...");
 
       
-      Console.ReadKey();
+      //Console.ReadKey();
 
     }
   }
