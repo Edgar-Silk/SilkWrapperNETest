@@ -1,6 +1,6 @@
 version: 1.0.{build}
 image: Visual Studio 2017
-platform: x64
+platform: x86
 configuration: Debug
 
   
@@ -21,4 +21,4 @@ build:
   project: SilkWrapperNETest.sln 
 
 test_script:
-  - C:\projects\silkwrappernetest\SilkWrapperNETest\bin\x64\Debug\SilkWrapperNETest.exe
+  - C:\projects\silkwrappernetest\SilkWrapperNETest\bin\x86\Debug\SilkWrapperNETest.exe
