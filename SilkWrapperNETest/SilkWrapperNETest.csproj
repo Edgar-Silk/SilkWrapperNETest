@@ -9,6 +9,7 @@
     <RootNamespace>SilkWrapperNETest</RootNamespace>
     <AssemblyName>SilkWrapperNETest</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <RuntimeIdentifiers>win-x64;win-x86</RuntimeIdentifiers>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
     <PublishUrl>publish\</PublishUrl>
