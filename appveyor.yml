@@ -12,6 +12,9 @@ before_build:
 
     - dotnet restore
 
+    # This is the location for building the VS project
+    - ps: Set-Location C:/projects/silkwrappernetest
+
 build:
   include_nuget_references: true
   verbosity: normal
